@@ -36,5 +36,5 @@ curl -s https://raw.githubusercontent.com/git/git/master/block-sha1/sha1.c | egr
 
 ## Limitations
 
-This application has been confirmed to work fine on OS X, but should work fine on most *nixes. Will have to be checked out/adapted to Windows.
+This application has been confirmed to work fine on OS X, but should work fine on most *nixes. Currently it doesn't work on Windows, see #1.
 
