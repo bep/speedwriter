@@ -37,7 +37,8 @@ An alternative to the above, is to pipe the text to stdin, e.g.:
 This makes it easy to make it look like you're coding like Linux Torvalds:
 
     curl -s https://raw.githubusercontent.com/git/git/master/block-sha1/sha1.c | egrep -v "^(//|/\*| \*)" | tail -n +153 | speedwriter
-	
+
+To end the session, either finish the text or press CTRL+C.	
 
 Options:
 

@@ -8,7 +8,7 @@ Just pick your text and start typing random letters as fast as you can! As any g
 
 ## Install
 
-**Speedwriter** is a Go application. The easiest way to intall it is via `go get`:
+**Speedwriter** is a Go application. The easiest way to install it is via `go get`:
 
 ```bash
  go get -v github.com/bep/speedwriter
@@ -33,6 +33,8 @@ This makes it easy to make it look like you're coding like Linus Torvalds:
 ```bash
 curl -s https://raw.githubusercontent.com/git/git/master/block-sha1/sha1.c | egrep -v "^(//|/\*| \*)" | tail -n +153 | speedwriter
 ```
+
+To end the session, either finish the text or press CTRL+C.	
 
 ## Limitations
 
