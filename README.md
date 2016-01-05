@@ -2,9 +2,9 @@
 
 **Speedwriter** makes it *look like* you write like a world-leading hacker or a New York Times best seller!
 
-This nifty little tool will be a building block in [Mammon](https://github.com/bep/mammon), a hacking scene factory for movie and television producers. 
+This nifty little tool will be a building block in [Mammon](https://github.com/bep/mammon), a hacking scene app for movie and television producers. 
 
-Just pick your text and start typing random letters as fast as you can! As any good magician will know: People will not notice the keys you press as long as the pace is in sync and the result is correct!
+Just pick your text and start typing random letters as fast as you can or want! As any good magician knows: People will not notice the wrong keys as long as the pace is in sync and the result is correct!
 
 ## Install
 
