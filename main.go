@@ -27,29 +27,34 @@ import (
 	"unicode"
 )
 
+const (
+	helpText string = `Usage: speedwriter [FILE]
+		
+An alternative to the above, is to pipe the text to stdin, e.g.:
+	
+    cat myfile.txt | speedwriter
+	
+This makes it easy to make it look like you're coding like Linux Torvalds:
+
+    curl -s https://raw.githubusercontent.com/git/git/master/block-sha1/sha1.c | egrep -v "^(//|/\*| \*)" | tail -n +153 | speedwriter
+	
+
+Options:
+
+    -help        display this help and exit
+    -version     output version information and exit
+    
+`
+
+	versionText string = `speedwriter 0.1`
+)
+
+var (
+	help    = flag.Bool("help", false, helpText)
+	version = flag.Bool("version", false, versionText)
+)
+
 func main() {
-
-	const (
-		helpText string = `Usage: speedwriter [FILE]
-		
-		An alternative to the above, is to pipe the text to stdin, e.g.:
-			
-			cat myfile.txt | speedwriter
-			
-		This makes it easy to make it look like you're coding like Linux Torvalds:
-		
-		    curl -s https://raw.githubusercontent.com/git/git/master/block-sha1/sha1.c | egrep -v "^(//|/\*| \*)" | tail -n +153 | speedwriter
-			
-		
-		Options:
-		
-		    -help        display this help and exit
-            -version     output version information and exit
-		    
-		`
-
-		versionText string = `speedwriter 0.1`
-	)
 
 	var (
 		fileReader io.Reader
@@ -134,4 +139,13 @@ func main() {
 func init() {
 	flag.Parse()
 	log.SetPrefix("speedwriter")
+
+	if *help {
+		fmt.Println(helpText)
+		os.Exit(0)
+	}
+	if *version {
+		fmt.Println(versionText)
+		os.Exit(0)
+	}
 }
