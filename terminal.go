@@ -23,8 +23,8 @@ import (
 func readTerm(done, read chan bool, wg *sync.WaitGroup) {
 	defer wg.Done()
 	t, _ := term.Open("/dev/tty")
-	defer t.Restore()
 	defer t.Close()
+	defer t.Restore()
 	term.RawMode(t)
 
 	for {
