@@ -38,5 +38,5 @@ To end the session, either finish the text or press CTRL+C.
 
 ## Limitations
 
-This application has been confirmed to work fine on OS X, but should work fine on most *nixes. Currently it doesn't work on Windows, see #1.
+This application has been confirmed to work fine on OS X, but should work fine on most *nixes. Currently it doesn't work on Windows, see [#1](https://github.com/bep/speedwriter/issues/1).
 
