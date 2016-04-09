@@ -1,5 +1,7 @@
 # Speedwriter
 
+[![GoDoc](https://godoc.org/github.com/bep/speedwriter?status.svg)](https://godoc.org/github.com/bep/speedwriter)
+
 **Speedwriter** makes it *look like* you write like a world-leading hacker or a New York Times best seller!
 
 This nifty little tool will be a building block in [Mammon](https://github.com/bep/mammon), a hacking scene app for movie and television producers. 
